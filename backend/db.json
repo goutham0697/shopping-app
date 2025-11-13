@@ -1,0 +1,8 @@
+{
+  "products": [
+    { "id": 1, "title": "T-Shirt", "price": 300 },
+    { "id": 2, "title": "Shoes", "price": 800 },
+    { "id": 3, "title": "Bag", "price": 1500 }
+  ],
+  "cart": []
+}
