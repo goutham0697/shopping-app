@@ -17,9 +17,9 @@ export const AppProvider = ({ children }) => {
 
   // Load data from localStorage on mount
   useEffect(() => {
-    const savedUser = localStorage.getItem("tgr_user");
-    const savedCart = localStorage.getItem("tgr_cart");
-    const savedProducts = localStorage.getItem("tgr_products");
+    const savedUser = localStorage.getItem("shopping_user");
+    const savedCart = localStorage.getItem("shopping_cart");
+    const savedProducts = localStorage.getItem("shopping_products");
 
     if (savedUser) setUser(JSON.parse(savedUser));
     if (savedCart) setCart(JSON.parse(savedCart));
@@ -28,12 +28,12 @@ export const AppProvider = ({ children }) => {
 
   // Save cart to localStorage whenever it changes
   useEffect(() => {
-    localStorage.setItem("tgr_cart", JSON.stringify(cart));
+    localStorage.setItem("shopping_cart", JSON.stringify(cart));
   }, [cart]);
 
   // Save products to localStorage whenever they change
   useEffect(() => {
-    localStorage.setItem("tgr_products", JSON.stringify(products));
+    localStorage.setItem("shopping_products", JSON.stringify(products));
   }, [products]);
 
   // Admin credentials (in real app, this would be in a secure backend)
@@ -55,14 +55,14 @@ export const AppProvider = ({ children }) => {
     };
 
     setUser(userWithRole);
-    localStorage.setItem("tgr_user", JSON.stringify(userWithRole));
+    localStorage.setItem("shopping_user", JSON.stringify(userWithRole));
   };
 
   const logout = () => {
     setUser(null);
-    localStorage.removeItem("tgr_user");
+    localStorage.removeItem("shopping_user");
     setCart([]); // Clear cart on logout
-    localStorage.removeItem("tgr_cart");
+    localStorage.removeItem("shopping_cart");
   };
 
   const addToCart = (product) => {

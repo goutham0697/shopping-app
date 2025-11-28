@@ -17,7 +17,7 @@ function AppContent() {
   const { user, isAdmin } = useApp();
 
   return (
-    <Router>
+    <Router basename="/shopping-app">
       <Header />
       <Routes>
         <Route path="/login" element={user ? <Navigate to="/" /> : <Login />} />

@@ -8,7 +8,7 @@ function Header() {
 
   return (
     <nav className="header">
-      <h2>🛒 TGR Store</h2>
+      <h2>🛒 Shopping App</h2>
       <div className="links">
         {user ? (
           <>

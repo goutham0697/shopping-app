@@ -17,13 +17,13 @@ function ProductList() {
         setLoading(true);
         const response = await axios.get("https://fakestoreapi.com/products");
         const savedProducts = JSON.parse(
-          localStorage.getItem("tgr_products") || "[]"
+          localStorage.getItem("shopping_products") || "[]"
         );
         setProducts([...response.data, ...savedProducts]);
       } catch (error) {
         console.error("Error fetching products:", error);
         const savedProducts = JSON.parse(
-          localStorage.getItem("tgr_products") || "[]"
+          localStorage.getItem("shopping_products") || "[]"
         );
         setProducts(savedProducts);
       } finally {

@@ -1,4 +1,4 @@
-# TGR Store
+# Shopping App
 
 React shopping app with basic e-commerce functionality.
 
