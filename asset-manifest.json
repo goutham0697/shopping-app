@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/tgr-store-/static/css/main.c394cc41.css",
-    "main.js": "/tgr-store-/static/js/main.ef5ddd5f.js",
-    "index.html": "/tgr-store-/index.html",
-    "main.c394cc41.css.map": "/tgr-store-/static/css/main.c394cc41.css.map",
-    "main.ef5ddd5f.js.map": "/tgr-store-/static/js/main.ef5ddd5f.js.map"
+    "main.css": "/shopping-app/static/css/main.c394cc41.css",
+    "main.js": "/shopping-app/static/js/main.83456f02.js",
+    "index.html": "/shopping-app/index.html",
+    "main.c394cc41.css.map": "/shopping-app/static/css/main.c394cc41.css.map",
+    "main.83456f02.js.map": "/shopping-app/static/js/main.83456f02.js.map"
   },
   "entrypoints": [
     "static/css/main.c394cc41.css",
-    "static/js/main.ef5ddd5f.js"
+    "static/js/main.83456f02.js"
   ]
 }
